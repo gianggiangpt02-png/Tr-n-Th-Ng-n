@@ -1,0 +1,189 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --brown: #8A5036;
+  --cacao: #6F3F2A;
+  --caramel: #914F1E;
+  --rose: #D4606A;
+  --rose-deep: #B8434A;
+  --terracotta: #BE5B50;
+  --brick: #9B3922;
+  --red: #AA2B1D;
+  --butter: #FBDB93;
+  --blush: #F9D5D3;
+  --peach: #FCE8D5;
+  --cream: #FFF4EA;
+  --pink-bg: #FBE3E0;
+  --peach-bg: #FCEBD6;
+  --rose-text: #C4535A;
+  --logo-ji: #FFC4BE;
+  --ink: #5A2E1C;
+  --ink-warm: #7A3B26;
+  --border-warm: rgba(138, 80, 54, 0.16);
+}
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Be Vietnam Pro", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-jeji-brown: #8A5036;
+  --color-jeji-cacao: #6F3F2A;
+  --color-jeji-caramel: #914F1E;
+  --color-jeji-rose: #D4606A;
+  --color-jeji-rose-deep: #B8434A;
+  --color-jeji-terracotta: #BE5B50;
+  --color-jeji-brick: #9B3922;
+  --color-jeji-red: #AA2B1D;
+  --color-jeji-butter: #FBDB93;
+  --color-jeji-blush: #F9D5D3;
+  --color-jeji-peach: #FCE8D5;
+  --color-jeji-cream: #FFF4EA;
+  --color-jeji-pink-bg: #FBE3E0;
+  --color-jeji-peach-bg: #FCEBD6;
+  --color-jeji-rose-text: #C4535A;
+  --color-jeji-logo-ji: #FFC4BE;
+  --color-jeji-ink: #5A2E1C;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--cream);
+    color: var(--ink);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--rose);
+    outline-offset: 2px;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.btn-rose-gradient {
+  background: linear-gradient(135deg, var(--rose), var(--rose-deep));
+  color: #ffffff;
+}
+
+.btn-rose-gradient:hover {
+  filter: brightness(1.04);
+}
+
+.btn-hero-primary {
+  background: linear-gradient(135deg, #A8683F, #8A5036);
+  color: #FFF1DC;
+}
+
+.btn-hero-primary:hover {
+  filter: brightness(1.06);
+}
+
+.combo-card-surface {
+  background: linear-gradient(135deg, var(--blush), var(--peach));
+  border-color: #EDB9B3;
+}
+
+/* Marquee animation for top announcement bar */
+@keyframes jeji-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-jeji-marquee {
+  display: flex;
+  width: max-content;
+  animation: jeji-marquee 28s linear infinite;
+}
+
+.animate-jeji-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-jeji-hanging-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: jeji-marquee 26s linear infinite;
+}
+
+.animate-jeji-hanging-track:hover,
+.animate-jeji-hanging-track:focus-within {
+  animation-play-state: paused;
+}
+
+@keyframes jeji-sway {
+  0%, 100% {
+    transform: rotate(-2.5deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(2.5deg) translateY(4px);
+  }
+}
+
+.animate-jeji-sway {
+  transform-origin: top center;
+  animation: jeji-sway 4.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-jeji-marquee,
+  .animate-jeji-hanging-track,
+  .animate-jeji-sway {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF4EA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(138, 80, 54, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(138, 80, 54, 0.5);
+}
+
+/* Print styles for Admin order receipt */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #jeji-print-receipt,
+  #jeji-print-receipt * {
+    visibility: visible;
+  }
+  #jeji-print-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #FFF4EA;
+    color: #5A2E1C;
+    padding: 24px;
+  }
+}

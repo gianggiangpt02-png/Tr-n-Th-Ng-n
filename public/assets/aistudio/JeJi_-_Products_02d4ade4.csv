@@ -1,0 +1,16 @@
+product_id,name,category,description,price_m,price_l,image_url,is_bestseller,is_available,sort_order
+SP001,Cà phê muối Jeji,Cà phê,Vị béo mặn đặc trưng của quán,29.000,35.000,https://example.com/img/ca-phe-muoi.jpg,TRUE,TRUE,1
+SP002,Bạc xỉu,Cà phê,Sữa đặc hòa quyện cà phê phin,25.000,30.000,https://example.com/img/bac-xiu.jpg,TRUE,TRUE,2
+SP003,Cà phê đen đá,Cà phê,Cà phê phin đậm vị truyền thống,20.000,25.000,https://example.com/img/ca-phe-den.jpg,FALSE,TRUE,3
+SP004,Cà phê nâu đá,Cà phê,Cà phê phin pha sữa đặc,22.000,27.000,https://example.com/img/ca-phe-nau.jpg,FALSE,TRUE,4
+SP005,Cappuccino,Cà phê,"Espresso, sữa nóng và lớp bọt mịn",35.000,42.000,https://example.com/img/cappuccino.jpg,FALSE,TRUE,5
+SP006,Trà đào cam sả,Trà,Đào miếng tươi và sả thơm,35.000,42.000,https://example.com/img/tra-dao.jpg,TRUE,TRUE,6
+SP007,Trà vải hoa hồng,Trà,Vải ngọt thanh cùng hương hoa hồng,35.000,42.000,https://example.com/img/tra-vai.jpg,FALSE,TRUE,7
+SP008,Trà sữa trân châu,Trà,"Trà sữa đậm vị, trân châu dai mềm",32.000,38.000,https://example.com/img/tra-sua.jpg,FALSE,TRUE,8
+SP009,Sinh tố bơ,Sinh tố,Bơ sáp xay sữa tươi,39.000,45.000,https://example.com/img/sinh-to-bo.jpg,FALSE,TRUE,9
+SP010,Sinh tố xoài,Sinh tố,"Xoài chín xay mịn, vị chua ngọt",35.000,42.000,https://example.com/img/sinh-to-xoai.jpg,FALSE,TRUE,10
+SP011,Nước cam ép,Nước ép,Cam tươi vắt nguyên chất,35.000,42.000,https://example.com/img/cam-ep.jpg,FALSE,TRUE,11
+SP012,Bánh tiramisu,Bánh,Làm thủ công mỗi ngày,32.000,,https://example.com/img/tiramisu.jpg,FALSE,TRUE,12
+SP013,Bánh mousse chanh leo,Bánh,"Mềm mịn, chua nhẹ",30.000,,https://example.com/img/mousse.jpg,FALSE,TRUE,13
+SP014,Topping trân châu,Topping,Trân châu đen nấu mỗi ngày,5.000,,https://example.com/img/tran-chau.jpg,FALSE,TRUE,14
+SP015,Topping kem cheese,Topping,Kem cheese béo mặn,10.000,,https://example.com/img/kem-cheese.jpg,FALSE,FALSE,15

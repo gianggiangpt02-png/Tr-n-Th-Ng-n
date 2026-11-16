@@ -1,0 +1,6 @@
+{
+  "name": "JeJi Coffee",
+  "description": "Một ly cà phê - Một khoảnh khắc Jeji. Đặt đồ uống trực tuyến tại JeJi Coffee Vĩnh Yên.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
